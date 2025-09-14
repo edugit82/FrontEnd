@@ -127,8 +127,8 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      const response = await axios.post('http://20.57.128.211:8080/Clientes', formData)
-      console.log('Resposta do servidor:', response.data)
+      const response = await axios.post('http://20.57.128.211:8080/Clientes', formData)      
+      console.log('Resposta do servidor:', response.data);
       toast.success('Cadastro realizado com sucesso!', {
         position: "top-right",
         autoClose: 5000,
